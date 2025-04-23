@@ -9,7 +9,7 @@ spec:
     #   image: nginx
     # This is the ambassador container
     - name: twemproxy
-      image: ganomede/twemproxy
+      image: anchorfree/twemproxy
       command: [ "nutcracker", "-c", "/etc/config/nutcracker.yaml", "-v", "7", "-s", "6222" ]
       volumeMounts:
       - name: config-volume
